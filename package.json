@@ -1,0 +1,22 @@
+{
+    "name": "beautified-cloudwatch-winston-logger",
+    "version": "0.1.0",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node cluster.js",
+        "dev": "nodemon app.js",
+        "reload": "rm -rf node_modules && npm i"
+    },
+    "author": "gokhanayhan",
+    "license": "MIT",
+    "dependencies": {
+        "aws-sdk": "^2.284.1",
+        "dotenv": "^6.1.0",
+        "winston": "3.2.1",
+        "winston-cloudwatch": "2.0.5"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
+}
