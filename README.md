@@ -1,9 +1,9 @@
-# beautified-cloudwatch-winston-logger
+# beautified-cloudwatch-winston-index
 
-Beautified cloudwatch winston based logger, you can search query params, request body and messages on cloudwatch.
+Beautified cloudwatch winston based index, you can search query params, request body and messages on cloudwatch.
 # Usage
 
-    const {logger, customLogFormatter} = require('./logger');
+    const {index, customLogFormatter} = require('./index');
     
-    logger.info({message: `[STARTUP] Server is starting on port: ${PORT}`});
-    logger.error(customLogFormatter(ctx, exception.stack));
+    index.info({message: `[STARTUP] Server is starting on port: ${PORT}`});
+    index.error(customLogFormatter(ctx, exception.stack));
